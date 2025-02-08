@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+</head>
+<body>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <h2>Add Task</h2>
+        <div>
+            <label>Title</label>
+            <br>
+            <input type="text" name="title" id="title">
+        </div>
+
+        <div>
+            <label>Description</label>
+            <br>
+            <textarea name="description" id="description"></textarea>
+        </div>
+        
+        <input type="submit", value="Add Task">
+    </form>
+</body>
+</html>
