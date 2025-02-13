@@ -2,7 +2,7 @@ from django_components import Component, register
 
 
 @register("card")
-class Calendar(Component):
+class Card(Component):
     template_file = "card/card.html"
 
     # css_file = "calendar/calendar.css"

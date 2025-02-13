@@ -2,7 +2,7 @@ from django_components import Component, register
 
 
 @register("buttons")
-class Calendar(Component):
+class Buttons(Component):
     template_file = "buttons/template.html"
 
     # css_file = "calendar/calendar.css"
