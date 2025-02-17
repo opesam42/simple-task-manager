@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/output.css' %}">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div>
+            <input type="search" placeholder="Search...">
+        </div>
+        <div>
+            <i class="far fa-bell"></i>
+            <i class="far fa-user"></i>
+        </div>
+
+        <div class="side-bar">
+            <nav>
+                <ul>
+                    <li>
+                        <i class="far fa-box"></i>
+                        <a>Dashboard</a>
+                    </li>
+                    <li>
+                        <i class=""></i>
+                        <a>Settings</a>
+                    </li>
+                    <li>
+                        <i class=""></i>
+                        <a>Logout</a>
+                    </li>
+                </ul>
+                <a>Dashboard</a>
+            </nav>
+        </div>
+
+    </header>
+    
+    {% block content %} {% endblock %} 
+
+</body>
+</html>

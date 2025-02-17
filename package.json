@@ -1,0 +1,17 @@
+{
+  "name": "task_manager",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/opesam42/simple-task-manager.git",
+  "author": "Gbenga Opeyemi <opesam42@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.2",
+    "tailwindcss": "^4.0.6"
+  },
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./static/css/input.css -o ./static/css/output.css --watch",
+    "prod" : "npx @tailwindcss/cli -i ./static/css/input.css -o ./static/css/output.css --minify"
+  }
+}
